@@ -41,4 +41,4 @@ int main()
 	pp.getdata(58);
 	max(p,pp);
 }
-8.	Write a program that demonstrates virtual, pure virtual functions
+
