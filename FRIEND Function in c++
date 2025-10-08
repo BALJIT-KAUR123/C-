@@ -1,0 +1,44 @@
+
+#include <iostream>
+using namespace std;
+class person2;
+class person1                                       
+{
+	int age;
+	public:
+		void input(int a)
+		{
+			age = a;
+		}
+		friend void max(person1,person2);
+};
+class person2
+{
+	int age;
+	public:
+		void getdata(int b)
+		{
+			age = b;
+		}
+		friend void max(person1,person2);		
+};
+void max (person1 s, person2 u)
+{
+	if (s.age>u.age)
+	{
+		cout<<"person1 age is grater"<<"age:"<<s.age;
+	}
+		else
+		{
+			cout<<"person2 age is grater" <<u.age;
+		}
+}
+int main()
+{
+	person1 p;
+	p.input (23);
+	person2 pp;
+	pp.getdata(58);
+	max(p,pp);
+}
+8.	Write a program that demonstrates virtual, pure virtual functions
