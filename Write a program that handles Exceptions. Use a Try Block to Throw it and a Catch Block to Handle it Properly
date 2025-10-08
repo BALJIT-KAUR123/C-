@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+int age;
+cout<<"enter yuor age";
+cin>>age;
+try{
+	if (age >>18)
+	{
+		cout <<"person vote";
+	}
+	else{
+		throw (age);
+	}
+}
+	catch(int num)
+	{
+		cout <<"person age is not enough for vote";
+	}
+}
